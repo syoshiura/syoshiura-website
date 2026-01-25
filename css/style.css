@@ -39,7 +39,7 @@ img {
 
 /* 見出し */
 .page-title {
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: 'Yu Gothic', serif;
     text-transform: uppercase;
     font-weight: normal;
@@ -112,11 +112,14 @@ iframe {
 #home {
     background-image: url(../images/top.jpeg);
     min-height: 100vh;
-    margin-top: -70px;
+    /* margin-top: -70px; */
+     padding-top: 120px;
 }
 #home .page-title {
-    text-transform: none;
-    color: #000000
+    /* margin-top: 10px; */
+    padding-top: 0px;
+        text-transform: none;
+    color: #fdfbfb
 }
 .home-content {
     text-align: center;
@@ -125,7 +128,7 @@ iframe {
 .home-content p {
     font-size: 1.125rem;
     margin: 100px 0 42px;
-    color: #000000
+    color: #f4ecec
 }
 
 .selfintro-content {
@@ -139,7 +142,7 @@ iframe {
 }
 .selfintro-content p {
     font-size: 1.125rem;
-    margin: 10px 0 42px;
+    margin: 10px 0 12px;
     color: #000000
 }
 
