@@ -74,7 +74,7 @@ iframe {
     width: 100%;
     height: 50px;
     justify-content: space-between;
-    background-color: #b4c1d1;
+    background-color: #000000;
     padding: 20px 50px;
     box-sizing: border-box;
     position: fixed;
@@ -90,7 +90,7 @@ iframe {
 }
 .main-nav {
     display: flex;
-    font-size: 15px; /*1.25rem;*/
+    font-size: 12px; /*1.25rem;*/
     text-transform: uppercase;
     margin-top: 10px;
     list-style: none;
@@ -100,7 +100,7 @@ iframe {
     margin-left: 20px;
 }
 .main-nav a {
-    color: #000000;
+    color: #ffffff;
 }
 .main-nav a:hover {
     color: #ff9933;
@@ -110,10 +110,13 @@ iframe {
 /* HOME
 ------------------------------- */
 #home {
-    background-image: url(../images/top.jpeg);
-    min-height: 100vh;
-    /* margin-top: -70px; */
-     padding-top: 120px;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url(../images/top.jpeg);
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
+  padding-top: 120px;
 }
 #home .page-title {
     /* margin-top: 10px; */
@@ -125,9 +128,31 @@ iframe {
     text-align: center;
     margin-top: 10%;
 }
+.stroke-blackbig {
+  color: #fff;
+  text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000;
+}
+.name-big{
+  font-size: 1.4rem;   /* 好みで調整（例：1.4〜2.0rem） */
+  font-weight: 700;    /* 太字にしたい場合 */
+  display: inline-block;
+  margin-bottom: 6px;  /* 下に少し余白 */
+}
+.stroke-black {
+  color: #fff;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
 .home-content p {
     font-size: 1.125rem;
-    margin: 100px 0 42px;
+    margin: 50px 0 42px;
     color: #f4ecec
 }
 
@@ -193,7 +218,7 @@ iframe {
     list-style:  decimal;      /* デフォルトのアイコンを消す */
     margin:  0;             /* デフォルト指定上書き */
     padding: 0;             /* デフォルト指定上書き */
-    margin-left: 5%;
+    margin-left: 20%;
     margin-top: 0%;
     margin-bottom: 3%;
     margin-right: 3%;
